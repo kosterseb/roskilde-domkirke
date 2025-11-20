@@ -7,7 +7,7 @@ export default function Story() {
     return (
         <>
             <HeaderNav />
-            <div className="story-page-one">
+            <div className="story-page">
                 <div className='story-one'>
                     <h1>The Royal and Religious Foundation (c. 980s - 1400s)</h1>
                     <h2>Viking Roots</h2>
@@ -22,7 +22,8 @@ export default function Story() {
                         The tomb of Queen Margrete I, who united the Scandinavian kingdoms in the Kalmar Union, was placed here in 1413, cementing the church's national importance just decades before the first great fire.
                     </p>
                 </div>
-                <div className='story-page-two'>
+                
+                <div className='story-two'>
                     <h1>The Context for the Great Fire of 1443</h1>
                     <h2>The Medieval City</h2>
                     <p>Roskilde was a densely packed medieval town, with many buildings constructed of wood, making it highly vulnerable to fire.</p>
@@ -30,21 +31,16 @@ export default function Story() {
                     <p>In 1443, a devastating city-wide fire broke out, destroying most of Roskilde and inflicting massive structural damage on the cathedral, including shattering windows and melting the lead roof.
                         It was a tragedy that coincided with the shifting of the Danish capital to Copenhagen, further straining the resources needed for reconstruction.</p>
                 </div>
-                <div className='story-page-three'>
+
+                <div className='story-three'>
                     <h1>The Lead-up to the 1968 Spire Fire</h1>
                     <h2>800 Years of Style</h2>
                     <p>Between the 15th and 20th centuries, the cathedral was continuously modified. Successive kings, most notably Christian IV in the 17th century, added chapels, ornate interiors, and its characteristic copper-clad spires, including the one known as "Margrethe's Spire."</p>
                     <p>By the 1960s, a major restoration project was underway to maintain the aging structure and its centuries of royal additions.</p>
                     <p>The 1968 fire occurred precisely during this restoration work on Margrethe's Spire. The very effort to preserve the spire's beauty—the use of equipment, materials, and labor—tragically became the source of its destruction.</p>
                 </div>
-                <div className="conclusion">
-                    <h1>The Aftermath and Restoration Efforts</h1>
-                    <p>The 1968 fire caused significant damage to Margrethe's Spire, destroying its wooden framework and copper cladding.
-                        However, the cathedral itself remained structurally sound, thanks to its robust medieval construction.</p>
-                    <p>Restoration efforts began almost immediately, with a focus on faithfully reconstructing the spire using traditional materials and techniques.
-                        The restoration was completed in the early 1970s, and today, Roskilde Domkirke stands as a testament to resilience and the enduring legacy of Danish history and architecture.</p>
-                </div>
-                <Link to="/equationsone" className="next-button">Proceed to Equations Challenge</Link>
+                
+                <Link to="/equationsone" className="next-button">Proceed</Link>
             </div>
         </>
     )

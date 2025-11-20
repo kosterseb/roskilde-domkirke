@@ -1,21 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router';
 import './HeaderNav.sass';
 
 export default function HeaderNav() {
     return (
         <header className="header-nav">
             <div className='logo'>
-                <a href="/">
+                <Link to="/">
                 <img src="./src/assets/crown-icon.png" alt="" />
-                </a>
+                </Link>
             </div>
         <nav className='navbar'>
             <ul className='nav-links'>
-            <li><a href="/">Home</a></li>
-            <li><a href="/story">Story</a></li>
-            <li><a href="/equationsone">Example one</a></li>
-            <li><a href="/equationstwo">Example Two</a></li>
-            <li><a href="/end">End</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/story">Story</Link></li>
+            <li><Link to="/equationsone">Example one</Link></li>
+            <li><Link to="/equationstwo">Example Two</Link></li>
+            <li><Link to="/end">End</Link></li>
             </ul>
         </nav>
         </header>

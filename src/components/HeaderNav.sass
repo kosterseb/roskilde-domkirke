@@ -11,8 +11,15 @@
   z-index: 1000
 
   .logo
-    font-size: 1.5em
-    font-weight: bold
+    img
+      height: 100px
+      width: auto
+      margin-top: 5px
+      margin-left: 12px
+      &:hover
+        transform: scale(1.05)
+        transition: transform 0.3s ease
+
 
   .nav-links
     list-style: none
@@ -33,11 +40,16 @@ li
       margin-right: 15px
 
     &:hover
-      text-decoration: underline
       color: #e2c872
+      transform: scale(1.09)
+      transition: color 0.3s ease, transform 0.3s ease
 
 .navbar
   padding: 10px 20px
 
-  &:hover
-    
+.logo
+    cursor: pointer
+    font-family: 'Roboto', sans-serif
+    font-size: 1.8em
+    &:hover
+      color: #333

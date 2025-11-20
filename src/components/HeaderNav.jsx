@@ -4,6 +4,11 @@ import './HeaderNav.sass';
 export default function HeaderNav() {
     return (
         <header className="header-nav">
+            <div className='logo'>
+                <a href="/">
+                <img src="./src/assets/crown-icon.png" alt="" />
+                </a>
+            </div>
         <nav className='navbar'>
             <ul className='nav-links'>
             <li><a href="/">Home</a></li>

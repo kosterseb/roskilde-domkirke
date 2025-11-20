@@ -1,13 +1,12 @@
-import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router'
-import Home from './pages/Home.jsx'
-import Story from './pages/Story.jsx'
-import EquationsOne from './pages/EquationsOne.jsx'
-import EquationsTwo from './pages/EquationsTwo.jsx'
-import End from './pages/End.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
+import Home from './pages/Home';
+import Story from './pages/Story';
+import EquationsOne from './pages/EquationsOne';
+import EquationsTwo from './pages/EquationsTwo';
+import End from './pages/End';
 
 function App() {
-
   return (
     <>
       <Router>
@@ -20,7 +19,7 @@ function App() {
         </Routes>
       </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

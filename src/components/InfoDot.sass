@@ -1,0 +1,39 @@
+.info-dot
+    position: absolute
+    width: 20px
+    height: 20px
+    background-color: #e2c872
+    border: 2px solid #e7d8a8
+    border-radius: 50%
+    cursor: pointer
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.8)
+    
+    &:hover .info-dot__tooltip
+        display: block
+
+    &__tooltip
+        display: none
+        position: absolute
+        bottom: 100%
+        left: 50%
+        transform: translateX(-50%)
+        background-color: white
+        padding: 10px
+        border: 1px solid #ccc
+        border-radius: 4px
+        white-space: nowrap
+        z-index: 10
+        margin-bottom: 10px
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2)
+        color: black
+
+        // Little arrow for the tooltip
+        &::after
+            content: ''
+            position: absolute
+            top: 100%
+            left: 50%
+            margin-left: -5px
+            border-width: 5px
+            border-style: solid
+            border-color: white transparent transparent transparent

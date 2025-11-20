@@ -1,119 +1,82 @@
-body
-    background-image: url('../assets/original-BGR.png')
-    background-color: #FEFEFE
-    background-repeat: no-repeat
-    background-position: center bottom -70px
-    background-size: 1700px
-    background-attachment: fixed
-    font-family: 'Roboto', sans-serif
-    color: #333
-    margin: 0
-    padding: 20px
-    line-height: 1.6
-
-//wrap all the stories so they are next to eachother
+// Story page specific styles
 .story-page
-    max-width: 1800px
-    padding: 40px 20px
-    z-index: -5
+    max-width: 1400px
+    margin: 0 auto
+    padding: 80px 20px 40px 20px
+    min-height: 100vh
+    background-image: url('../assets/original-BGR.png')
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: contain
     display: flex
     flex-direction: row
-    justify-content: space-around
-    align-items: center
+    justify-content: space-between
+    align-items: flex-start
     flex-wrap: wrap
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+    gap: 20px
 
-// make three sepperate boxes that are 400px by 400px
+// Story boxes with proper styling
+.story-one, .story-two, .story-three, .story-four
+    width: 100%
+    max-width: 400px
+    min-height: 500px
+    padding: 25px
+    background-color: rgba(255, 255, 255, 0.95)
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+    border-radius: 8px
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+
+    &:hover
+        transform: translateY(-5px)
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2)
+
+    h1
+        font-size: 1.4em
+        font-weight: 700
+        color: #e2c872
+        margin-bottom: 15px
+        line-height: 1.3
+
+    h2
+        font-size: 1.2em
+        font-weight: 600
+        color: #555
+        margin-bottom: 12px
+        margin-top: 15px
+
+    p
+        font-size: 1em
+        color: #333
+        margin-bottom: 12px
+        line-height: 1.6
+
 .story-one
-      width: 400px
-      height: 100px
-      background-color: #ff5733
-      margin: 10px
-      display: inline-block
-      
-      h1
-        color: #000000
-        text-align: center
-        padding-top: 30px
-        h2
-            color: #000000
-            text-align: center
-            padding-top: 10px
-            p
-                color: #000000
-                text-align: center
-                padding-top: 10px
-    
+    border-left: 4px solid #ff5733
+
 .story-two
-        width: 400px
-        height: 100px
-        background-color: #33c1ff
-        margin: 10px
-        display: inline-block
-        h1
-        color: #000000
-        text-align: center
-        padding-top: 30px
-        h2
-            color: #000000
-            text-align: center
-            padding-top: 10px
-            p
-                color: #000000
-                text-align: center
-                padding-top: 10px
-    
+    border-left: 4px solid #33c1ff
+
 .story-three
-        width: 400px
-        height: 100px
-        background-color: #75ff33
-        margin: 10px
-        display: inline-block
-        h1
-        color: #000000
-        text-align: center
-        padding-top: 30px
-        h2
-            color: #000000
-            text-align: center
-            padding-top: 10px
-            p
-                color: #000000
-                text-align: center
-                padding-top: 10px
-    
+    border-left: 4px solid #75ff33
+
 .story-four
-        width: 400px
-        height: 100px
-        background-color: #ff33a8
-        margin: 10px
-        display: inline-block
-        h1
-        color: #000000
-        text-align: center
-        padding-top: 30px
-        h2
-            color: #000000
-            text-align: center
-            padding-top: 10px
-            p
-                color: #000000
-                text-align: center
-                padding-top: 10px
+    border-left: 4px solid #ff33a8
     
 .next-button
     text-decoration: none
     color: #e2c872
     font-size: 1.5em
+    font-weight: 600
     display: block
     text-align: center
-    margin: 30px auto 0 auto
-    width: 150px
-    padding: 10px 0
+    margin: 40px auto 0 auto
+    width: 200px
+    padding: 15px 0
     border: 2px solid #e2c872
     border-radius: 8px
+    background-color: transparent
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease
     &:hover
         background-color: #e2c872
         color: #fff
         transform: scale(1.05)
-        transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease

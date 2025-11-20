@@ -6,9 +6,7 @@ import './Home.sass';
 export default function Home() {
     return (
         <>
-            <div className='header'>
-                <HeaderNav />
-            </div>
+            <HeaderNav />
             <div className="home-page">
                 <h1>Roskilde Domkirke</h1>
                 <div>

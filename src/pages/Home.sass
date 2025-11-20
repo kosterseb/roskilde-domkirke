@@ -1,24 +1,17 @@
-body
-    background-image: url('../assets/linjetegning-Edit.png')
-    background-color: #FEFEFE
-    background-repeat: no-repeat
-    background-position: center bottom -70px
-    background-size: 1700px
-    background-attachment: fixed
-    font-family: 'Roboto', sans-serif
-    color: #333
-    margin: 0
-    padding: 20px
-    line-height: 1.6
-
-
-
-// place behind header
+// Home page specific styles
 .home-page
-    max-width: 2100px
-    margin: -255px auto
+    max-width: 1200px
+    margin: 0 auto
     padding: 40px 20px
-    z-index: -5
+    min-height: 100vh
+    background-image: url('../assets/Linjetegning-Edit.png')
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: contain
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 100px
     
 
     h1
@@ -40,36 +33,39 @@ body
     div
         font-size: 1em
         margin-bottom: 15px
-        width: 17%
-        background-color: rgba(255, 255, 255, 0.877)
+        width: 100%
+        max-width: 600px
+        background-color: rgba(255, 255, 255, 0.95)
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
-        padding: 15px 20px
+        padding: 30px 40px
+        border-radius: 8px
+        transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease
         &:hover
-            background-color: rgba(62, 61, 61, 0.877)
+            background-color: rgba(62, 61, 61, 0.95)
             color: #fff
             cursor: pointer
             transform: scale(1.02)
-            transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease
             h1, h2, p
                 color: #fff
+            span.highlight
+                color: #e2c872
         span.highlight
             color: #e2c872
             font-weight: 700
-            border-radius: 4px
 .start-button
-  text-decoration: none
-  color: #e2c872
-  &:hover
-    transform: scale(1.05)
-    animation: pulse 1s infinite
-
-.header
-    z-index: 1000
-    position: relative
+    text-decoration: none
+    color: #e2c872
+    font-size: 1.3em
+    font-weight: 600
+    margin-top: 20px
+    display: inline-block
+    &:hover
+        transform: scale(1.05)
+        transition: transform 0.2s ease
 
 .disclaimer
-    p
-    font-size: 0.2rem
+    font-size: 0.9rem
     color: #61616184
     margin-top: 20px
     text-align: center
+    font-style: italic

@@ -11,26 +11,21 @@ export default function EquationsTwo() {
 			<div className="equations-two-page">
 				<h1>Equations Two</h1>
 				<div className="equations-two-page__calculation-container">
-					<InfoDot top="32%" left="40.2%">
-						Equation 1 info...
+					<InfoDot top="33.5%" left="55%">
+						<p>Solve for x: 2x + 3 = 11</p>
 					</InfoDot>
 
-					<InfoDot top="60%" left="65%">
-						Equation 2 info...
+					<InfoDot top="55%" left="65%">
+						<p>Solve for y: 5y - 4 = 16</p>
 					</InfoDot>
 
-					<InfoDot top="89%" left="60%">
-						Equation 3 info...
+					<InfoDot top="40%" left="80%">
+						<p>Solve for z: 3z + 2 = 14</p>
 					</InfoDot>
 					<p>
 						Welcome to the second set of equations! Solve these to continue your
 						adventure.
 					</p>
-					<ul>
-						<li>Solve for x: 2x + 3 = 11</li>
-						<li>Solve for y: 5y - 4 = 16</li>
-						<li>Solve for z: 3z + 2 = 14</li>
-					</ul>
 				</div>
 
 				<p>

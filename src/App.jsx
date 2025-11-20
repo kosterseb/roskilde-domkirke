@@ -23,8 +23,11 @@ function AnimatedRoutes() {
 }
 
 function App() {
+  // Use base path for production (GitHub Pages), root for development
+  const basename = import.meta.env.MODE === 'production' ? '/roskilde-domkirke' : '/';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <AnimatedRoutes />
     </Router>
   );

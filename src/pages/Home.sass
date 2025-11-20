@@ -1,0 +1,68 @@
+body
+    background-image: url('../assets/dronning-linjetegning.png')
+    background-color: #FEFEFE
+    background-repeat: no-repeat
+    background-position: center bottom
+    background-size: 1700px
+    background-attachment: fixed
+    font-family: 'Roboto', sans-serif
+    color: #333
+    margin: 0
+    padding: 20px
+    line-height: 1.6
+
+
+
+// place behind header
+.home-page
+    max-width: 2100px
+    margin: -255px auto
+    padding: 40px 20px
+    z-index: -5
+    
+
+    h1
+        font-size: 11em
+        font-weight: 900
+        margin-bottom: -40px
+        color: #e2c872
+        
+    
+    h2
+        font-size: 1.4em
+        font-weight: 700
+        margin-bottom: 25px
+        color: #e2c872
+    
+    p
+        font-size: 1.2em
+
+    div
+        font-size: 1em
+        margin-bottom: 15px
+        width: 30%
+        background-color: rgba(255, 255, 255, 0.877)
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+        padding: 15px 20px
+        &:hover
+            background-color: rgba(62, 61, 61, 0.877)
+            color: #fff
+            cursor: pointer
+            transform: scale(1.02)
+            transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease
+            h1, h2, p
+                color: #fff
+        span.highlight
+            color: #e2c872
+            font-weight: 700
+            border-radius: 4px
+.start-button
+  text-decoration: none
+  color: #e2c872
+  &:hover
+    transform: scale(1.05)
+    animation: pulse 1s infinite
+
+.header
+    z-index: 1000
+    position: relative
